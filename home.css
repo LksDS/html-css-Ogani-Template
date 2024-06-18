@@ -109,13 +109,16 @@ main>div{
     height: 15px;
 }
 #search-suport-area{
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
     padding-left: 40px;
     grid-row: 2;
     grid-column: 3/4;
 }
 #search{
     height: 55px;
-    width: 65%;
+    width: 68%;
     min-width: 200px;
     border: 1px solid #ebebeb;
 }
@@ -133,6 +136,7 @@ main>div{
     width: 50%;
     font-size: 16px;
     color: #b2b2b2;
+    margin-left: 20px;
 }
 #search > form > button{
     background-color: #7fad39;
@@ -157,6 +161,22 @@ main>div{
 }#search #categories-selector> svg{
     height: 10px;
 }
+#phone-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    aspect-ratio: 1/1;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+
+}
+#phone-div svg{
+    fill: #7fad39;
+    height: 15px;
+}
+
+
 #photo{
     grid-column: 3/4;
     grid-row: 3;
