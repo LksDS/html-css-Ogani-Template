@@ -3,3 +3,165 @@
     padding: 0;
     box-sizing: border-box
 }
+.pointer{
+    cursor: pointer;
+}
+main{
+    display: grid;
+    grid-template-columns: 1.3fr 1.3fr 3.9fr 1.3fr;
+    grid-template-rows: 80px 80px 511px 270px;
+}
+main>div{
+    border: 1px solid black;
+}
+#logo{
+    padding-left: 20px;
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+}
+#nav{
+    grid-column: 3/4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+}
+#nav ul{
+    width: 60%;
+    justify-content: space-evenly;
+    list-style: none;
+    display: flex;
+}
+#nav > ul> #home{
+    color: #7fad39;
+}
+#nav li{
+    font-weight: 800;
+    letter-spacing: .1rem;
+    font-family: "Cairo",sans-serif;
+    transition: .2s;
+}
+#nav li:hover{
+    color: #7fad39;
+}
+#nav > div{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+#nav .icon-container{
+    margin-right: 2px;
+}
+#nav .icon-container> svg{
+    height: 20px;
+}
+#nav .icon-container> span{
+    display: inline-block;
+    position: relative;
+    top: -16px;
+    left: -6px;
+    font-family: "Cairo",sans-serif;
+    font-size: 11px;
+    line-height: 15px;
+    font-weight: 900;
+    color: white;
+    background-color: #7fad39;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+#nav #preco-carrinho{
+    font-family: "Cairo",sans-serif;
+}
+
+#nav #preco-carrinho>span{
+    font-weight: bold;
+}
+#departments{
+    grid-column: 2;
+    grid-row: 2/4;
+    padding-left: 20px;
+}
+#departments > #departments-btn{
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #7fad39;
+    fill: white;
+    color: white;
+}
+#departments > #departments-btn > span{
+    font-family: "Cairo",sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+#bars{
+    height: 20px;
+    margin-left: 20px;
+}
+.angle-down{
+    height: 15px;
+}
+#search-suport-area{
+    padding-left: 40px;
+    grid-row: 2;
+    grid-column: 3/4;
+}
+#search{
+    height: 55px;
+    width: 65%;
+    min-width: 200px;
+    border: 1px solid #ebebeb;
+}
+#search > form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+#search > form > input{
+    border: 0;
+    outline: 0;
+    height: 90%;
+    width: 50%;
+    font-size: 16px;
+    color: #b2b2b2;
+}
+#search > form > button{
+    background-color: #7fad39;
+    color: white;
+    width: auto;
+    padding: 0 30px;
+    height: 100%;
+    border: 0;
+    font-family: "Cairo",sans-serif;
+    font-weight: 900;
+}
+#search #categories-selector{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 180px;
+    height: 100%;
+}
+#search #categories-selector> span{
+    font-family: "Cairo",sans-serif;
+    font-weight: 900;
+}#search #categories-selector> svg{
+    height: 10px;
+}
+#photo{
+    grid-column: 3/4;
+    grid-row: 3;
+}
+#carrossel{
+    grid-row: 4;
+    grid-column: 2/4;
+}
