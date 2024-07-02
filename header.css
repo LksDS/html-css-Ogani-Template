@@ -7,7 +7,7 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    padding: 0 20%;
+    padding: 0 18.2% 0 18.7%;
 }
 header >.side{
 width: 100%;
@@ -38,8 +38,13 @@ header span{
     opacity: 0.1;
 }
 .side>div{
+    height: 40px;
     display: flex;
     align-items: center;
+}
+.side>div.vertical-separator{
+    height: 20px;
+    margin-right: 10px;
 }
 #socialMedias{
     justify-content: right;
@@ -47,7 +52,43 @@ header span{
     column-gap: 20px;
 }
 #language-selector{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+}
+#language-selector>div{
+    width: 90%;
+    padding-left: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
     justify-content: space-evenly;
+}
+#language-selector>ul{
+    background-color: black;
+    padding-left: 10px;
+    padding-right: 40px;
+    display: flex;
+    top: 20px;
+    left: 1px;
+    flex-direction: column;
+    position: relative;
+    z-index: -999;
+    opacity: 0;
+    transition: .5s;
+}
+#language-selector:hover>ul{
+    opacity: 1;
+    z-index: 1000;
+    top: 0px;
+    left: 1px;
+}
+#language-selector>ul> span{
+    color: white;
+}
+#language-selector img{
+    height: 15px;
 }
 #language-selector svg{
     height: 10px;
