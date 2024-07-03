@@ -12,6 +12,7 @@ main{
     display: grid;
     grid-template-columns: 1.3fr 1.3fr 3.9fr 1.3fr;
     grid-template-rows: 80px 80px 440px 320px;
+    margin-bottom: 80px;
 }
 
 #logo{
@@ -336,4 +337,20 @@ main{
     align-self: center;
     position: relative;
     color: #1c1c1c;
+}
+#feat-prod-top>h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+}
+.barra-horizontal{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 70px;
+    height: 4px;
+    background-color: #7fad39;
+}
+#feat-prod-category-selector{
+    margin-top: 30px;
 }
