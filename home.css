@@ -343,14 +343,14 @@ main{
 }
 #feat-prod-top>h2{
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 900;
 }
 .barra-horizontal{
     position: relative;
     left: 50%;
     transform: translate(-50%,0);
-    width: 70px;
+    width: 80px;
     height: 4px;
     background-color: #7fad39;
 }
@@ -360,7 +360,7 @@ main{
 #feat-prod-category-selector>form>ul{
     display: flex;
     width: 100%;
-    padding: 0 35%;
+    padding: 0 37%;
     justify-content: space-evenly;
     list-style-type: none;
     margin-bottom: 50px;
@@ -374,6 +374,7 @@ main{
 #feat-prod-category-selector>form>ul>li>span{
     color: #1c1c1c;
     font-size: 18px;
+    line-height: 25px;
 }
 #feat-prod-category-selector>form>ul>li>input{
     position: absolute;
@@ -382,7 +383,7 @@ main{
     opacity: 0;
 }
 .underbar{
-    height: 3px;
+    height: 2px;
     width: 0;
     background-color: #7fad39;
     transition: .5s;
@@ -393,34 +394,111 @@ main{
 }
 article{
     display: grid;
-    grid-template-columns: 1.3fr 1.3fr 1.3fr 1.3fr 1.3fr 1.3fr;
+    grid-template-columns: 1.3fr 35px 1.3fr 1.3fr 1.3fr 1.3fr 35px 1.3fr;
     grid-template-rows: 1fr 1fr;
-    height: 80vh;
-    row-gap: 60px;
+    height: 78vh;
+    row-gap: 20px;
 }
-article>div{
-    background-color: red;
+article>div{  
     margin: 0 15px
 }
 .icontainer > svg{
     height: 20px;
 }
 #food1{
-    grid-column: 2;
+    grid-column: 3;
+}
+#carne{
+    background-image: url(img/Produtos/feature-1.jpg);
+}
+#banana{
+    background-image: url(img/Produtos/feature-2.jpg);
+}
+#goiaba{
+    background-image: url(img/Produtos/feature-3.jpg);
+}
+#melancia{
+    background-image: url(img/Produtos/feature-4.jpg);
+}
+#mirtilo{
+    background-image: url(img/Produtos/feature-5.jpg);
+}
+#hamburguer{
+    background-image: url(img/Produtos/feature-6.jpg);
+}
+#manga{
+    background-image: url(img/Produtos/feature-7.jpg);
+}
+#maca{
+    background-image: url(img/Produtos/feature-8.jpg);
 }
 #food5{
 grid-row: 2;
-grid-column: 2;
+grid-column: 3;
 }
 #food6{
 grid-row: 2;
-grid-column: 3;
+grid-column: 4;
 }
 #food7{
     grid-row: 2;
-    grid-column: 4;
+    grid-column: 5;
 }
 #food8{
     grid-row: 2;
-    grid-column: 5;
+    grid-column: 6;
+}
+.food-foto{
+    height: 75%;
+    overflow: hidden;
+}
+.food-foto>div{
+    display: flex;
+    padding: 0 20%;
+    justify-content: space-evenly;
+    position: relative;
+    top: 100%;
+    transition: ease-out .3s;
+}
+.food-foto:hover>div{
+    top: 75%;
+}
+.icontainer{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ebebeb;
+    transition: .5s;
+}
+.icontainer:hover{
+    background-color: #7fad39;
+}
+.icontainer>svg{
+    height: 15px;
+    width: 15px;
+    transition: .3s;
+}
+.icontainer:hover>svg{
+    fill: white;
+    transform: rotate(360deg);
+}
+.food>div{
+    margin-bottom: 10px;
+}
+.food>a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #252525;
+}
+.food>h5{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 20px;
 }
