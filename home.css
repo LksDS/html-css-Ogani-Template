@@ -560,12 +560,12 @@ article > div {
   color: #636363;
   font-size: 1rem;
 }
-.prod-ranking-container {
-}
 .prod-ranking-container > .container {
   margin-bottom: 20px;
   height: 30%;
   display: flex;
+  text-decoration: none;
+  color: #252525;
 }
 .prod-ranking-container > .container > img {
   height: 110px;
