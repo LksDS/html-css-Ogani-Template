@@ -401,9 +401,7 @@ article {
 article > div {
   margin: 0 15px;
 }
-.icontainer > svg {
-  height: 20px;
-}
+
 #food1 {
   grid-column: 3;
 }
@@ -462,29 +460,8 @@ article > div {
 .food-foto:hover > div {
   top: 75%;
 }
-.icontainer {
-  background-color: white;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #ebebeb;
-  transition: 0.5s;
-}
-.icontainer:hover {
-  background-color: #7fad39;
-}
-.icontainer > svg {
-  height: 15px;
-  width: 15px;
-  transition: 0.3s;
-}
-.icontainer:hover > svg {
-  fill: white;
-  transform: rotate(360deg);
-}
+
+
 .food > div {
   margin-bottom: 10px;
 }
