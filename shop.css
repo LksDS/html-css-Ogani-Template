@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+.pointer:hover {
+  cursor: pointer;
+}
+main {
+  display: grid;
+  grid-template-columns: 1.3fr 1.3fr 3.9fr 1.3fr;
+  grid-template-rows: 80px 80px;
+  margin-bottom: 40px;
+}
+
+#shop {
+  color: #7fad39;
+}
+#title {
+  background-image: url(img/breadcrumb.jpg);
+  padding: 36px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+#title > h2 {
+  color: white;
+  font-size: 46px;
+  line-height: 40px;
+  font-weight: 800;
+}
+#title > div {
+  display: flex;
+  justify-content: center;
+}
+#title > div > a {
+  margin-right: 15px;
+  font-weight: 800;
+}
+#title > div > a,
+#title > div > span {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+#conteudo-principal {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 1fr;
+  grid-template-rows: 584px 1652px 40px;
+}
+#department-price {
+  grid-column: 2;
+}
+#department-price h4 {
+  color: #1c1c1c;
+  font-weight: 800;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+#department-price > ul {
+  list-style-type: none;
+  margin-bottom: 25px;
+}
+#department-price > ul > li > a {
+  text-decoration: none;
+  color: #1c1c1c;
+  line-height: 39px;
+}
+#department-price input {
+  width: 90%;
+  margin-bottom: 10px;
+}
+#preco-range {
+  display: flex;
+}
+#preco-range input {
+  color: red;
+  font-weight: 800;
+  width: 20%;
+  border: 0;
+  outline: 0;
+}
+#promocao {
+  grid-column: 3;
+}
+#promocao h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+#barra-horizontal {
+  width: 140px;
+  height: 4px;
+  background-color: #7fad39;
+  margin-bottom: 40px;
+}
+#produtos-promocao {
+  margin-bottom: 35px;
+  display: grid;
+  grid-template-columns: 1fr 30px 1fr 30px 1fr;
+  height: 372px;
+}
+#food1 {
+  grid-column: 1;
+}
+#food2 {
+  grid-column: 3;
+}
+#food3 {
+  grid-column: 5;
+}
+#hamburguer {
+  background-image: url(img/Produtos/feature-6.jpg);
+}
+#manga {
+  background-image: url(img/Produtos/feature-7.jpg);
+}
+#maca {
+  background-image: url(img/Produtos/feature-8.jpg);
+}
+.food-foto {
+  height: 75%;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+}
+.promocao-amount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.promocao-amount > span {
+  color: white;
+  font-size: 13px;
+}
+.food > span {
+  line-height: 10px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #b2b2b2;
+  font-size: 14px;
+}
+.food-foto > .aparecer {
+  display: flex;
+  padding: 0 20%;
+  justify-content: space-evenly;
+  position: relative;
+  top: 100%;
+  transition: ease-out 0.3s;
+}
+.food-foto:hover > .aparecer {
+  top: 75%;
+}
+
+.food > div {
+  margin-bottom: 10px;
+}
+.food > a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #252525;
+}
+.food > h5 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 20px;
+}
+.food > h5 span {
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 14px;
+  color: #b2b2b2;
+  text-decoration: line-through;
+  font-weight: 400;
+}
+#bolinhas {
+  width: 100%;
+}
+#bolinhas > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+#bolinhas input {
+  margin-right: 10px;
+}
