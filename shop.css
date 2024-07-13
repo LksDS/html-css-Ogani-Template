@@ -500,6 +500,15 @@ h6 {
     font-size: 16px;
     padding-left: 15px;
 }
+#page-selector > a:hover{
+  color: white;
+  background-color: #7fad39;
+  border-color: #7fad39;
+
+}
+#page-selector > a:hover>svg{
+  fill: white;
+}
 #page-selector > a{
   position: relative;
   width: 30px;
@@ -511,6 +520,7 @@ h6 {
   text-decoration: none;
   display: block;
   text-align: center;
+  transition: .2s;
 }
 #page-selector > a>svg{
   position: absolute;
@@ -519,4 +529,5 @@ h6 {
   transform: translate(-50%,-50%);
   width: 10px;
   fill: #b2b2b2;
+  transition: .2s;
 }
